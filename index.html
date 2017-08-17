@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Loja Virtual</title>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 
 <style>
@@ -21,6 +21,13 @@
 	body {
 		padding-top: 50px;
 	}
+
+	footer {
+		background: #333;
+		color: #fff;
+		text-align: center;
+		padding: 20px 20px;
+	}
 </style>
 
 <body>
@@ -29,7 +36,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="index.html" class="navbar-brand">ShoppingNet</a>
+					<a href="#home" class="navbar-brand">ShoppingNet</a>
 					<button class="navbar-toggle" type="button" data-target="#barra-nav" data-toggle="collapse">
 						Menu
 					</button>
@@ -38,10 +45,10 @@
 				<div class="collapse navbar-collapse" id="barra-nav">
 					<ul class="nav navbar-nav">
 						<li>
-							<a href="#">Novidades</a>
+							<a href="#novidades">Novidades</a>
 						</li>
 						<li>
-							<a href="#">Mais vendidos</a>
+							<a href="#maisVendidos">Mais vendidos</a>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Camisetas <span class="caret"></span></a>
@@ -63,8 +70,9 @@
 		</nav>
 	</header>
 
+	<main>
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row" id="home">
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
@@ -86,59 +94,44 @@
 	</div>
 
 	<div class="container-fluid">
-	<div class="row">
-		<div class="col-xs-12 col-sm-3">
-			<div class="text-center">
-				<h3>Categorias</h3>
-			</div>
-			<ul class="list-group">
-				<li class="list-group-item"><a href="#">Camisetas Masculinas</a></li>
-				<li class="list-group-item"><a href="#">Camisetas Femininas</a></li>
-				<li class="list-group-item"><a href="#">Uniformes de time</a></li>
-			</ul>
-		</div>
-
-		<div class="col-xs-12 col-sm-9">
-			<div>
-				<h3 class="text-center"><strong>Novidades</strong></h3>
+		<div class="row">
+			<div class="col-xs-12 col-sm-3">
+				<div class="text-center">
+					<h3>Categorias</h3>
+				</div>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#">Camisetas Masculinas</a></li>
+					<li class="list-group-item"><a href="#">Camisetas Femininas</a></li>
+					<li class="list-group-item"><a href="#">Uniformes de time</a></li>
+				</ul>
 			</div>
 
-			<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4">
-				<figure>
-					<img src="img/corint.png" alt="Camisa Corinthians">
-					<div>
-						<h4>Camisa Corinthians</h4>
-						<p>Camisa Corinthians Original</p>
-					</div>
-				</figure>
-				<div class="btn-group">
-					<a href="#" class="btn btn-default">R$ 190,00</a>
-					<a href="#" class="btn btn-primary">
-						<span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
-					</div>
+			<div class="col-xs-12 col-sm-9">
+				<div id="novidades">
+					<h3 class="text-center"><strong>Novidades</strong></h3>
 				</div>
 
-				<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4">
+				<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4 wow fadeInUp">
 					<figure>
-						<img src="img/saopaulo-min.png" alt="Camisa São Paulo">
+						<img src="img/corint.png" alt="Camisa Corinthians">
 						<div>
-							<h4>Camisa São Paulo</h4>
-							<p>Camisa São Paulo Original</p>
+							<h4>Camisa Corinthians</h4>
+							<p>Camisa Corinthians Original</p>
 						</div>
 					</figure>
 					<div class="btn-group">
 						<a href="#" class="btn btn-default">R$ 190,00</a>
-						<a href="#" class="btn btn-primary">
+						<a href="produto.html" class="btn btn-primary">
 							<span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
 						</div>
 					</div>
 
-					<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4">
+					<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4 wow fadeInUp">
 						<figure>
-							<img src="img/corint2.jpg" alt="Camisa Corinthians Clássica">
+							<img src="img/saopaulo-min.png" alt="Camisa São Paulo">
 							<div>
-								<h4>Camisa Corinthians Clássica</h4>
-								<p>Camisa Corinthians Original Clássica</p>
+								<h4>Camisa São Paulo</h4>
+								<p>Camisa São Paulo Original</p>
 							</div>
 						</figure>
 						<div class="btn-group">
@@ -147,20 +140,87 @@
 								<span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
 							</div>
 						</div>
-					</div>
 
-				</div>
-				</div>
+						<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4 wow fadeInUp">
+							<figure>
+								<img src="img/corint2.jpg" alt="Camisa Corinthians Clássica">
+								<div>
+									<h4>Camisa Corinthians Clássica</h4>
+									<p>Camisa Corinthians Original Clássica</p>
+								</div>
+							</figure>
+							<div class="btn-group">
+								<a href="#" class="btn btn-default">R$ 190,00</a>
+								<a href="#" class="btn btn-primary">
+									<span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+								</div>
+							</div>
 
+							<div id="maisVendidos">
+								<h3 class="text-center"><strong>Mais Vendidos</strong></h3>
+							</div>
 
+							<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4 wow fadeInUp">
+								<figure>
+									<img src="img/corint.png" alt="Camisa Corinthians">
+									<div>
+										<h4>Camisa Corinthians</h4>
+										<p>Camisa Corinthians Original</p>
+									</div>
+								</figure>
+								<div class="btn-group">
+									<a href="#" class="btn btn-default">R$ 190,00</a>
+									<a href="produto.html" class="btn btn-primary">
+										<span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+									</div>
+								</div>
 
+								<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4 wow fadeInUp">
+									<figure>
+										<img src="img/saopaulo-min.png" alt="Camisa São Paulo">
+										<div>
+											<h4>Camisa São Paulo</h4>
+											<p>Camisa São Paulo Original</p>
+										</div>
+									</figure>
+									<div class="btn-group">
+										<a href="#" class="btn btn-default">R$ 190,00</a>
+										<a href="#" class="btn btn-primary">
+											<span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+										</div>
+									</div>
 
+									<div class="thumbnail text-center col-xs-12 col-sm-6 col-md-4 wow fadeInUp">
+										<figure>
+											<img src="img/corint2.jpg" alt="Camisa Corinthians Clássica">
+											<div>
+												<h4>Camisa Corinthians Clássica</h4>
+												<p>Camisa Corinthians Original Clássica</p>
+											</div>
+										</figure>
+										<div class="btn-group">
+											<a href="#" class="btn btn-default">R$ 190,00</a>
+											<a href="#" class="btn btn-primary">
+												<span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</main>
 
+							<footer>
+								Lorem ipsum dolor sit amet<br>
+								(71) 9 9999-9999
+							</footer>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+							<script src="bootstrap/js/bootstrap.min.js"></script>
+							<script type="text/javascript" src="js/wow.min.js"></script>
 
-
-
-
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-				<script src="bootstrap/js/bootstrap.min.js"></script>
-			</body>
-			</html>
+							<script>
+								$(function() {
+									new WOW().init();
+								});
+							</script>
+						</body>
+						</html>

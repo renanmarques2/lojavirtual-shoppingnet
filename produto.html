@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loja Virtual</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+
+<style>
+	.navbar-header button {
+		color: white;
+	}
+
+	.fullscreen {
+		width: 100%;
+	}
+
+	body {
+		padding-top: 50px;
+	}
+
+	
+	footer {
+		background: #333;
+		color: #fff;
+		text-align: center;
+		padding: 20px 20px;
+	}
+
+	.tab-pane {
+		padding: 10px 0;
+	}
+</style>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">ShoppingNet</a>
+					<button class="navbar-toggle" type="button" data-target="#barra-nav" data-toggle="collapse">
+						Menu
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="barra-nav">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">Novidades</a>
+						</li>
+						<li>
+							<a href="index.html">Mais vendidos</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Camisetas <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Masculino</a></li>
+								<li><a href="#">Feminino</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="search" class="form-control" placeholder="O que você procura?">
+						</div>
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-5">
+					<img class="img-responsive img-thumbnail" src="img/corint-buy.jpg">
+				</div>
+
+				<div class="col-xs-12 col-sm-7">
+					<div class="text-center">
+						<h1>Camisa Original Corinthians</h1>
+						<h3>R$ 190,00</h3>
+						<a href="carrinho.html" class="btn btn-primary btn-lg">Comprar</a>
+					</div>
+					<div class="row">
+						<ul class="nav nav-tabs">
+							<li class="nav active"><a href="#descricao" data-toggle="tab">Descrição</a></li>
+							<li class="nav"><a href="#info" data-toggle="tab">Informações</a></li>
+						</ul>
+
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="descricao">
+								<p>Camisa Original do time Corinthians.</p>
+								<p>Vista o uniforme do time do seu coração.</p>
+							</div>
+
+							<div class="tab-pane fade" id="info">
+								<table class="table table-responsive">
+									<tbody>
+										<tr>
+											<td>Tecido</td>
+											<td>Algodão</td>
+										</tr>
+
+										<tr>
+											<td>Tamanhos</td>
+											<td>P, M, G e GG</td>
+										</tr>
+										<tr>
+											<td>Fabricante</td>
+											<td>Corinthians</td>
+										</tr>
+										<tr>
+											<td>País de Origem</td>
+											<td>Brasil</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		Lorem ipsum dolor sit amet<br>
+		(71) 9 9999-9999
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+</body>
+</html>

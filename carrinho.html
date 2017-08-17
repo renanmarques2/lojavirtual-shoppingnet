@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loja Virtual</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+
+<style>
+	body {
+		font-size: 16px;
+	}
+
+	.navbar-header button {
+		color: white;
+	}
+
+	.fullscreen {
+		width: 100%;
+	}
+
+	body {
+		padding-top: 50px;
+	}
+
+	footer {
+		background: #333;
+		color: #fff;
+		text-align: center;
+		padding: 20px 20px;
+	}
+
+	.tab-pane {
+		padding: 10px 0;
+	}
+</style>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">ShoppingNet</a>
+					<button class="navbar-toggle" type="button" data-target="#barra-nav" data-toggle="collapse">
+						Menu
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="barra-nav">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">Novidades</a>
+						</li>
+						<li>
+							<a href="index.html">Mais vendidos</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Camisetas <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Masculino</a></li>
+								<li><a href="#">Feminino</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="search" class="form-control" placeholder="O que você procura?">
+						</div>
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-5">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2>Sua compra</h2>
+						</div>
+						<div class="panel-body">
+							<img class="img-responsive img-thumbnail" src="img/corint-buy.jpg">
+
+							<dl>
+								<dt>Nome</dt>
+								<dd>Camisa do Corinthians</dd>
+
+								<dt>Tamanho</dt>
+								<dd>M</dd>
+
+								<dt>Preço</dt>
+								<dd>R$ 190,00</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="col-xs-12 col-sm-7">
+					<form>
+						<fieldset>
+							<legend>Informações do Usuário</legend>
+							<div class="form-group">
+								<label for="nome-buy">Nome Completo</label>
+								<input class="form-control" type="text" id="nome-buy">
+							</div>
+
+							<div class="form-group">
+								<label for="email-buy">E-mail</label>
+								<div class="input-group">
+									<span class="input-group-addon">@</span>
+									<input class="form-control" type="email" id="email-buy">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="cpf-buy">CPF</label>
+								<input class="form-control" type="text" id="cpf-buy">
+							</div>
+
+							<div class="checkbox">
+								<label for="novidades">
+									<input type="checkbox" id="novidades" checked value="sim">
+									Receber novidades da loja
+								</label>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Formas de pagamento</legend>
+							<div class="form-inline">
+								<div class="radio">
+									<label for="mastercard"><img src="img/mastercard-128px.png"></label>
+									<input type="radio" name="opc" id="mastercard">
+								</div>
+
+								<div class="radio">
+									<label for="visa"><img src="img/visa-128px.png"></label>
+									<input type="radio" name="opc" id="visa">
+								</div>
+
+								<div class="radio">
+									<label for="amex"><img src="img/amex-128px.png"></label>
+									<input type="radio" name="opc" id="amex">
+								</div>
+							</div>
+							<br>
+
+							<div class="form-group">
+								<label for="numcard">Número do cartão</label>
+								<input class="form-control" type="text" id="numcard">
+							</div>
+
+							<div class="form-group">
+								<label for="validade">Validade</label>
+								<input class="form-control" type="month" id="validade">
+							</div>
+
+							<div class="form-group">
+								<label for="codseg">Código de Segurança</label>
+								<input class="form-control" type="text" maxlength="3" id="codseg">
+							</div>
+						</fieldset>
+						<button type="submit" class="btn btn-primary">
+							<span class="glyphicon glyphicon-check"></span>
+							Confirmar pedido
+						</button>
+
+					</form>
+					<br>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		Lorem ipsum dolor sit amet<br>
+		(71) 9 9999-9999
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+</body>
+</html>
